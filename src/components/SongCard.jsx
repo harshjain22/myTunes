@@ -10,7 +10,7 @@ return(
         </div>
 
         <div className='cardItem'>
-            <img className='cardImg' src={song.artworkUrl100} alt='image'/>
+            <img className='cardImg' src={song.artworkUrl100} alt='music poster'/>
         </div>
 
         <div className='audioDiv'>
@@ -20,7 +20,7 @@ return(
         <h4 className='artistName'> {song.artistName} </h4>
         
         <div>
-            <a href={song.trackViewUrl} target='_blank' > View more on iTunes</a> 
+            <a href={song.trackViewUrl} target='_blank' rel="noreferrer"  > View more on iTunes</a> 
         </div>
         
     </div>
