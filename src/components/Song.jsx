@@ -23,7 +23,7 @@ const Song = () => {
     }
 
     useEffect(() => {
-        makeApiCall("yo yo honey");       // it is called when component mount
+        makeApiCall("AP Dhillon");       // it is called when component mount
     }, []);
 
     
