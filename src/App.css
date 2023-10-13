@@ -2,6 +2,130 @@
   text-align: center;
 }
 
+
+.logo{
+  height: 80px;
+  width: 250px;
+}
+
+.card:hover .marqueeName {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide the overflowed text */
+  animation: marquee 5s linear infinite; /* Apply the animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Initial position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the text to the left */
+  }
+}
+
+
+.title{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cardItem{ 
+  width: 140px;
+  height: 120px;
+
+  border-radius: 12px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin: 1.5rem;
+
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(236, 245, 245);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.audioDiv{
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+
+.searchContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar{
+  width: 500px;
+  height: 50px;
+  border-radius: 8px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.searchBtn{
+  height: 55px;
+  width: 100px;
+
+  margin-left: 10px;
+  background-color: #1b1a1a;
+  color: white;
+  font-style: italic;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family : Arial, Helvetica, sans-serif ;
+}
+.searchBtn:active{
+  transform: scale(1.05, 1.05);
+}
+
+.artistName{
+  padding-left: 15px;
+}
+
+.cardImg{
+  border-radius: 15px;
+  margin: 0px 40px 0px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  width: 100%;
+  margin-top: 3rem ;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
