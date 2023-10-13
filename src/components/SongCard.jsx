@@ -24,7 +24,7 @@ return(
         </div>
         
     </div>
-);s
+);
 
 }
 
